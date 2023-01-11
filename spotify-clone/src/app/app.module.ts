@@ -4,11 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-@NgModule({
-  declarations: [
-    AppComponent
+@NgModule({  
+  declarations: [  // TODO: declaraciones, componentes, directivas, pipes.
+    AppComponent,
   ],
-  imports: [
+  imports: [    // TODO: solo se importan otros módulos
     BrowserModule,
     AppRoutingModule
   ],
