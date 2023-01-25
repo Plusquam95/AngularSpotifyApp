@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AbstractControl } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-sidebar',
@@ -20,16 +21,19 @@ export class SidebarComponent implements OnInit {
 
     {
       name: 'home',
-      icon: 'ui uil-estate'
+      icon: 'ui uil-estate',
+      router: ['/']
     },
 
     {
       name: 'Buscar',
-      icon: 'uil uil-search uil'
+      icon: 'uil uil-search uil',
+      router: ['/', 'history']
     },
     {
       name: 'Tu biblioteca',
-      icon: 'uil uil-book'
+      icon: 'uil uil-book',
+      router: ['/', 'favorites']
     }
 
   ]
